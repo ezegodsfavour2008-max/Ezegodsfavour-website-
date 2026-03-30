@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Godsfavour Eze</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+nav h2 {
+    color: #38bdf8;
+}
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.hero img {
+    width: 220px;
+    border-radius: 50%;
+    margin: 20px;
+    border: 3px solid #38bdf8;
+}
+.hero-text {
+    max-width: 400px;
+}
+.hero-text h1 {
+    color: #38bdf8;
+}
+
+/* BUTTON */
+.btn {
+    background: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px;
+    text-align: center;
+}
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Godsfavour</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <!-- IMPORTANT: Save your image as profile.jpg -->
+    <img src="profile.jpg" alt="My Photo">
+
+    <div class="hero-text">
+        <h1>Godsfavour Eze</h1>
+        <p>I am passionate about coding, trading, and physics. Welcome to my professional website.</p>
+        <button class="btn" onclick="scrollToSection('contact')">Contact Me</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>I am a young developer learning web development, with strong interest in forex trading and theoretical physics.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="card">HTML & JavaScript</div>
+    <div class="card">Forex Trading</div>
+    <div class="card">Physics Knowledge</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <button class="btn" onclick="contactWhatsApp()">WhatsApp</button>
+    <button class="btn" onclick="sendEmail()">Email</button>
+</section>
+
+<footer>
+    <p>© 2026 Godsfavour Eze</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({behavior: "smooth"});
+}
+
+function contactWhatsApp() {
+    window.open("https://wa.me/2348071414483", "_blank");
+}
+
+function sendEmail() {
+    window.location.href = "mailto:ezegodsfavour2008@gmail.com";
+}
+</script>
+
+</body>
+</html>
